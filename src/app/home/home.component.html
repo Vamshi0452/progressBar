@@ -1,0 +1,26 @@
+<div class="button-container-div" *ngIf="!buttonDisplay">
+    <app-start-button (start)="startProgress()"></app-start-button>
+</div>
+<div *ngIf="!progressCompleted" class="displayProgressBar">
+    <div class="row toggle">
+        <button class="btn btn-primary  float-right" (click)="progressBarDisplay()">
+            <i class="fas fa-caret-down"></i>
+          </button>
+    </div>
+    <app-progress-bar [progress]="progressValue"></app-progress-bar>
+</div>
+<footer class="text" *ngIf="progressCompleted">
+    <div class="row toggle2" *ngIf="progressDisplay">
+        <button class="btn btn-primary float-right" (click)="progressBarDisplay()">
+            <i class="fas fa-caret-up"></i>
+          </button>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="assets/images/ample-logic.png" width="100">
+        </div>
+        <div class="col-md-4">
+            <span><b>Copyrights &copy; 2010-2023 Amplelogic | All Rights Reserved.</b></span>
+        </div>
+    </div>
+</footer>

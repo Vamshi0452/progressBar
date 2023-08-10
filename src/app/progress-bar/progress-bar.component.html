@@ -1,0 +1,13 @@
+<div class="row">
+  <hr>
+  <div class="col-md-1 mt-2">
+    <img src="assets/images/icon.svg">
+  </div>
+  <div class="col-md-11">
+    <span class="text"><b>Migrating data to selected environment</b></span>
+    <div class="progress-bar-container" *ngIf="progress < 100">
+      <div class="progress-bar" [style.width.%]="progress"></div>
+      <div class="progress-value">{{ progress }}%</div>
+    </div>
+  </div>
+</div>

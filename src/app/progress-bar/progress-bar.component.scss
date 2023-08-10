@@ -1,0 +1,25 @@
+.progress-bar-container {
+    width: 105%;
+    height: 8px;
+    margin-top: 2px;
+    background-color: #ccc;
+    margin-left: -80px;
+  }
+  .text{
+    margin-left: -80px;
+  }
+  .progress-bar {
+    height: 100%;
+    background-color: #007bff;
+  }
+  
+  .display{
+    box-shadow: 0px 1px 1px 1px;
+  }
+
+  .progress-value {
+    position: absolute;
+    top: 40%;
+    left: 98%;
+    transform: translate(-50%, -50%);
+  }
